@@ -13,8 +13,9 @@ object Test {
 
     //I want the user identified by 1
 
-    //val user = data.DAOUser.getUser("ale")
-    val user = data.DAOUser.getUser("ale").get
+    val user: User = data.DAOUser.getUser("ale").get
+
+    //val user = data.DAOUser.getUser("ale").get
     println("USER: " + user)
 
     //User1 wants to create a story

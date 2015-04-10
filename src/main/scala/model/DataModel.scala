@@ -16,9 +16,7 @@ case class Story(
                   score: Option[Int] = None,
                   url: Option[String] = None,
                   title: Option[String] = None
-                  ){
-
-}
+                  )
 
 case class Comment(
                     id: Int,
@@ -43,7 +41,7 @@ case class User(id: String = "",
     stories= stories.::(story)
     println("STORIES: " + stories)
   }
+
+
 }
-
-
 

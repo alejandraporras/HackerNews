@@ -20,9 +20,9 @@ object DAOUser {
       users.values.toList
     }
 
-  def getUser(id: String)={
-    //users.getOrElse(id, "Not Found")
+  def getUser(id: String): Option[User] = {
     users.get(id)
+
 
   }
 
